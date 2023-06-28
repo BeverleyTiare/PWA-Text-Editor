@@ -2,7 +2,7 @@
 
 ## Description
 
-The following is a web-based text editor application that runs in the browser and comprises of a single-page application (SPA), and as such meets criteria for a Progressive Web App (PWA).  Data persistence techniques, including IndexedDB are used to ensure redundancy if options are not supported by the user's browser.  Also, the application functions offline to enable users to access and edit their content without  internet connection.
+The following is a web-based text editor application that runs in the browser and comprises of a single-page application (SPA), and as such meets the criteria for a Progressive Web App (PWA).  Data persistence techniques, including IndexedDB are used to ensure redundancy if options are not supported by the user's browser.  Also, the application functions offline to enable users to access and edit their content without internet connection.
 
 ## Installation
 The following are required for the application:
@@ -92,12 +92,8 @@ To deploy the application to Heroku, create a Heroku account and follow as below
 1. Initialize a new Git repository (if not already initialized):
 ```git init```
 
-2. Commit any changes:
-```git add .```
- ```git commit -m "Initial commit"```
-
-3. Create a new Heroku app:
-   ```heroku create your-app-name```
+2. Create a new Heroku app: ( specify a name as shown in tag if preferred)
+   ```heroku create <app name>```
 
 4. Set up the necessary build scripts for a webpack application:
    Update the `package.json` file with the following scripts:
@@ -106,7 +102,9 @@ To deploy the application to Heroku, create a Heroku account and follow as below
   "heroku-postbuild": "npm run build && npm run webpack-plugins"
 }```
 
-5. Push the code to Heroku:
+5. Deploy to Heroku:
+  ```git add -A```
+  ```git commit -m "Pushing to Heroku"
    ```git push heroku main```
 
 6.  Open deployed application:
