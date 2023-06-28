@@ -110,10 +110,10 @@ To deploy the application to Heroku, create a Heroku account and follow as below
 6.  Open deployed application:
 ```heroku open ```
 
-## Links TODO !!!
--   The URL of the functional, deployed application:
+## Links
+-   The URL of the functional, deployed application:https://pure-sands-62644-c1c049f35518.herokuapp.com/ 
     
--   The URL of the GitHub repository:
+-   The URL of the GitHub repository:https://github.com/BeverleyTiare/PWA-Text-Editor
 
 
 ## Acknowledgements
