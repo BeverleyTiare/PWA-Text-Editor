@@ -86,29 +86,25 @@ Data Persistence:
   - idb (Wrapper around IndexedDB API)
 
 ## Heroku Deployment
+To deploy the application to Heroku, create a Heroku account, then follow below: 
 
-To deploy the application to Heroku, create a Heroku account and follow as below: 
+1. Initialize a new Git repository:```git init```
 
-1. Initialize a new Git repository (if not already initialized):
-```git init```
-
-2. Create a new Heroku app: ( specify a name as shown in tag if preferred)
-   ```heroku create <app name>```
-
-4. Set up the necessary build scripts for a webpack application:
+2. Create a new Heroku app: ```heroku create```
+   
+3. Set up the necessary build scripts for a webpack application:
    Update the `package.json` file with the following scripts:
  ```"scripts": {
   "start": "node server.js",
   "heroku-postbuild": "npm run build && npm run webpack-plugins"
 }```
 
-5. Deploy to Heroku:
-  ```git add -A```
-  ```git commit -m "Pushing to Heroku"
+5. Deploy to Heroku: ```git add -A```, 
+  ```git commit -m "Pushing to Heroku",
    ```git push heroku main```
 
-6.  Open deployed application:
-```heroku open ```
+6.  Open deployed application:```heroku open ```
+
 
 ## Links
 -   The URL of the functional, deployed application:https://pure-sands-62644-c1c049f35518.herokuapp.com/ 
